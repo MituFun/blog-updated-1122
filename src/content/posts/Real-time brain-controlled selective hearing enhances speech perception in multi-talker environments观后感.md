@@ -3,9 +3,9 @@ title: Real-time brain-controlled selective hearing enhances speech perception i
 published: 2026-09-21
 description: ''
 image: ''
-tags: ['算法','脑机接口']
-category: '科研'
-draft: false 
+tags: ['算法','杂谈']
+category: '杂谈'
+draft: true 
 lang: ''
 ---
 
