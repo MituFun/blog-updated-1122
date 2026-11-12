@@ -61,22 +61,17 @@ export const profileConfig: ProfileConfig = {
   name: 'MituFun',
   bio: '迷途知返',
   links: [
-    {
-      name: 'GitHub',
-      icon: 'fa6-brands:github',
-      url: 'https://github.com/MituFun',
-    }   
-    // {
-    //     name: 'Instagram',
-    //     icon: 'fa6-brands:instagram',
-    //     url: 'https://www.instagram.com/mitufun123/',
-    // },
-    // {
-    //     name: 'Twitter',
-    //     icon: 'fa6-brands:x-twitter',
-    //     url: 'https://x.com/William3086342',
-    // },
-  ],
+  {
+    name: 'GitHub',
+    icon: 'fa6-brands:github',
+    url: 'https://github.com/MituFun',
+  },
+  {
+    name: 'Codeforces',
+    icon: 'simple-icons:codeforces',
+    url: 'https://codeforces.com/profile/Fununugugu',
+  },
+],
 }
 
 export const licenseConfig: LicenseConfig = {
