@@ -39,13 +39,17 @@ $n>4$ 时完全可以构造：$p=\{4,2,3,1,5,6,7,8,9\cdots\}$，对于 $i>4$ 时
 
 那么有多少个 Diverse String 呢？令字符串中 $1$ 的个数为 $\text{cnt1}$，$0$ 的个数为 $\text{cnt0}$，不难想到公式：
 
-$$\text{ans}=1+\dfrac{\text{cnt1(cnt1+1)}}{2}+\dfrac{\text{cnt0(cnt0+1)}}{2}$$
+$$
+\text{ans}=1+\dfrac{\text{cnt1(cnt1+1)}}{2}+\dfrac{\text{cnt0(cnt0+1)}}{2}
+$$
 
 为什么是 $\text{cnt}+1$ 的组合数呢？因为可以只修改一个数，相当于另外一个端点是自己。
 
 但是题目中允许修改 $k$ 个值。我们期望上式答案最大化，根据性质有：$\text{cnt1}=n-\text{cnt0}$ 将上式化简得到（为了简单点，$x=\text{cnt1}$）：
 
-$$\text{ans}=\dfrac{2x^2-2nx+(n^2+n+2)}{2}$$
+$$
+\text{ans}=\dfrac{2x^2-2nx+(n^2+n+2)}{2}
+$$
 
 容易发现，在 $n$ 为常数的情况下，此为对称轴为 $\dfrac{n}{2}$ 的二次函数，故当 $x$ 越偏激的时候，$\text{ans}$ 越有最大值。
 
@@ -174,7 +178,9 @@ signed main() {
 
 考虑到分割点必存在性质（$\text{pre}$ 前缀和，$\text{suf}$ 后缀和）：
 
-$$\text{pre}_i-\text{suf}_{n-i+1}=0$$
+$$
+\text{pre}_i-\text{suf}_{n-i+1}=0
+$$
 
 故分割点也一定镜像对称。
 
